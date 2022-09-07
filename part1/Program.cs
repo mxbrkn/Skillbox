@@ -119,7 +119,7 @@ namespace part1
                 }
             }
             else
-            { Console.WriteLine("База данных не существует");
+            { Console.WriteLine("База данных пока пуста, но вы можете добавить запись!");
             Console.ReadKey();
             
             }
