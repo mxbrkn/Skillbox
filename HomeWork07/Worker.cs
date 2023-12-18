@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace HomeWork07
 {
-    internal class Worker
+    internal struct Worker
     {
+        public int Id { get; set; }
     }
 }
