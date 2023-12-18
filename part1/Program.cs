@@ -9,7 +9,7 @@ namespace part1
         {
             string choice = "1";
 
-            while (choice=="1"||choice=="2")
+            while (choice == "1" || choice == "2")
             {
                 choice = ShowChoice();
 
@@ -29,11 +29,11 @@ namespace part1
             return Console.ReadLine();
         }
 
-         static string GetFileName()
-            {
+        static string GetFileName()
+        {
             string FileName = @"file.txt";
             return FileName;
-            }
+        }
 
         static void ProcessChoice(string choise)
         {
@@ -56,7 +56,8 @@ namespace part1
 
         }
 
-        static void AddRecords(string FileName) {
+        static void AddRecords(string FileName)
+        {
 
             string FIO, Age, Height, BirthDay, BirthPlace, line;
 
@@ -68,32 +69,32 @@ namespace part1
             }
 
             string[] linesOfText = new string[1];// { Console.ReadLine() };
-            
+
             Console.WriteLine("Введите ФИО:");
             FIO = Console.ReadLine();
-            
+
             Console.WriteLine("Введите возраст:");
             Age = Console.ReadLine();
-            
+
             Console.WriteLine("Введите рост:");
             Height = Console.ReadLine();
-            
+
             Console.WriteLine("Введите дату рождения:");
             BirthDay = Console.ReadLine();
-            
+
             Console.WriteLine("Введите место рождения:");
             BirthPlace = Console.ReadLine();
 
-            line = Convert.ToString(Id) + '#' + Convert.ToString(DateTime.Now) + '#' +FIO  + "#" + Age + '#' + Height + '#' + BirthDay + '#' + BirthPlace;
+            line = Convert.ToString(Id) + '#' + Convert.ToString(DateTime.Now) + '#' + FIO + "#" + Age + '#' + Height + '#' + BirthDay + '#' + BirthPlace;
 
             linesOfText[0] = line;
 
-            using (StreamWriter sw = new (FileName, true, System.Text.Encoding.Unicode))
+            using (StreamWriter sw = new(FileName, true, System.Text.Encoding.Unicode))
             {
                 sw.WriteLine(line);
-              
+
             }
-            
+
             Console.WriteLine("\nЗапись добавлена\n");
 
         }
@@ -119,11 +120,14 @@ namespace part1
                 }
             }
             else
-            { Console.WriteLine("База данных пока пуста, но вы можете добавить запись!");
-            Console.ReadKey();
-            
+            {
+                Console.WriteLine("База данных пока пуста, но вы можете добавить запись!");
+                Console.ReadKey();
+
             }
-            
+
         }
-}
     }
+}
+
+
