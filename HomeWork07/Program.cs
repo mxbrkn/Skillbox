@@ -51,9 +51,6 @@ namespace HomeWork07
             {
                 Console.WriteLine("Вы выбрали что-то не то");
             }
-
-
-
         }
 
         static void AddRecords(string FileName)
