@@ -1,7 +1,7 @@
 ﻿using System.IO;
 
 
-namespace part1
+namespace HomeWork06
 {
     internal class Program
     {
