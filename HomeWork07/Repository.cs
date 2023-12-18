@@ -51,8 +51,6 @@ namespace HomeWork07
                 // присваиваем worker уникальный ID,
                 // дописываем нового worker в файл
 
-                worker 
-
                 string FIO, Age, Height, BirthDay, BirthPlace, line;
 
                 int Id = 1;
