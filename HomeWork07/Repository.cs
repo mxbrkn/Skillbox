@@ -49,9 +49,7 @@ namespace HomeWork07
         public void AddWorker(Worker worker)
         {
                 // присваиваем worker уникальный ID,
-                // дописываем нового worker в файл
-
-                worker 
+                // дописываем нового worker в файл 
 
                 string FIO, Age, Height, BirthDay, BirthPlace, line;
 
